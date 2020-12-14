@@ -1,12 +1,18 @@
 package runner;
 
+import com.vimalselvam.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import managers.FileReaderManager;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import java.io.File;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"./src/test/java/features"} ,
-        format = {"pretty","json:reporting/cucumber.json","html:reporting/cucumber-pretty","junit:reporting/junit_xml/cucumber.xml"},
+        plugin = {"pretty","json:reporting/cucumber.json","html:reporting/cucumber-pretty","junit:reporting/junit_xml/cucumber.xml",
+        "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:path/report.html"},
         glue = "stepDefinitions",
         strict = false,
         monochrome = true,
@@ -14,6 +20,13 @@ import org.junit.runner.RunWith;
         dryRun = false)
 
 public class RunnerTest {
+
+    @AfterClass
+    public static void writeExtentReport() {
+        Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+    }
+
+
 
 }
 

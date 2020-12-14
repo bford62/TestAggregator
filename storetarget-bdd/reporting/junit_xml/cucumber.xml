@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="10.374537">
+<testcase classname="login feature" name="attempt to login with no password" time="7.969259">
+<system-out><![CDATA[Given user is on the login page.............................................passed
+When user enters incorrect email............................................passed
+But user does not enter input in password field.............................passed
+Then user clicks on sign in button..........................................not executed
+And there should be an error stating user should enter password.............not executed
+]]></system-out>
+</testcase>
+<testcase classname="login feature" name="attempt to login with no password" time="2.405278">
+<system-out/>
+</testcase>
+</testsuite>

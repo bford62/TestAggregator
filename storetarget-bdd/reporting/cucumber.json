@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3407005459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "attempt to login with no password",
+        "description": "",
+        "id": "login-feature;attempt-to-login-with-no-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4233329518,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginSteps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 296443670,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters incorrect email",
+            "match": {
+              "location": "LoginSteps.user_enters_incorrect_email()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32480141,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user does not enter input in password field",
+            "match": {
+              "location": "LoginSteps.user_does_not_enter_input_in_password_field()"
+            },
+            "keyword": "But "
+          },
+          {
+            "line": 7,
+            "name": "user clicks on sign in button",
+            "keyword": "Then "
+          },
+          {
+            "line": 8,
+            "name": "there should be an error stating user should enter password",
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@FunctionalTest"
+          },
+          {
+            "line": 2,
+            "name": "@XT-139"
+          }
+        ]
+      }
+    ],
+    "name": "login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2405278026,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "attempt to login with no password",
+        "description": "",
+        "id": "login-feature;attempt-to-login-with-no-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 5,
+            "name": "users is on the login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 6,
+            "name": "users enters incorrect email",
+            "keyword": "When "
+          },
+          {
+            "line": 7,
+            "name": "users does not enter input in password field",
+            "keyword": "But "
+          },
+          {
+            "line": 8,
+            "name": "users clicks on sign in button",
+            "keyword": "Then "
+          },
+          {
+            "line": 9,
+            "name": "theres should be an error stating user should enter password",
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@FunctionalTest"
+          },
+          {
+            "line": 3,
+            "name": "@XT-170"
+          }
+        ]
+      }
+    ],
+    "name": "login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "notlogin.feature"
+  }
+]

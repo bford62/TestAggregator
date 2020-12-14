@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4479715759,
+  "duration": 3407005459,
   "status": "passed"
 });
 formatter.scenario({
@@ -57,38 +57,76 @@ formatter.match({
   "location": "LoginSteps.user_is_on_the_login_page()"
 });
 formatter.result({
-  "duration": 4209990169,
+  "duration": 4233329518,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_incorrect_email()"
 });
 formatter.result({
-  "duration": 632263316,
+  "duration": 296443670,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_does_not_enter_input_in_password_field()"
 });
 formatter.result({
-  "duration": 35255217,
+  "duration": 32480141,
   "status": "passed"
 });
-formatter.match({
-  "location": "LoginSteps.user_clicks_on_sign_in_button()"
+formatter.uri("notlogin.feature");
+formatter.feature({
+  "line": 1,
+  "name": "login feature",
+  "description": "",
+  "id": "login-feature",
+  "keyword": "Feature"
 });
-formatter.result({
-  "duration": 141827758,
+formatter.before({
+  "duration": 2405278026,
   "status": "passed"
 });
-formatter.match({
-  "location": "LoginSteps.there_should_be_an_error_stating_user_should_enter_password()"
+formatter.scenario({
+  "line": 4,
+  "name": "attempt to login with no password",
+  "description": "",
+  "id": "login-feature;attempt-to-login-with-no-password",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@FunctionalTest"
+    },
+    {
+      "line": 3,
+      "name": "@XT-170"
+    }
+  ]
 });
-formatter.result({
-  "duration": 45814737,
-  "status": "passed"
+formatter.step({
+  "line": 5,
+  "name": "users is on the login page",
+  "keyword": "Given "
 });
-formatter.after({
-  "duration": 181462472,
-  "status": "passed"
+formatter.step({
+  "line": 6,
+  "name": "users enters incorrect email",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "users does not enter input in password field",
+  "keyword": "But "
+});
+formatter.step({
+  "line": 8,
+  "name": "users clicks on sign in button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "theres should be an error stating user should enter password",
+  "keyword": "And "
+});
 });
